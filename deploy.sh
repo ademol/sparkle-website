@@ -1,9 +1,8 @@
+cd /var/staging/sparkle-website/
+git pull
 
-cd /home/arjan/_sparkle/sparkle-website/
-git pull 
-
+npm install
 ng build --prod
 
-cd /home/arjan/_sparkle/sparkle-website/dist/sparkeWebsite
+cd /var/staging/sparkle-website/dist/sparkeWebsite
 scp * sparkle:/var/www/angular-deploy
-
